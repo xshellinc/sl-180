@@ -10,7 +10,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        simpleBluetoothIO = SimpleBluetoothIO(serviceUUID: "19B10000-E8F2-537E-4F6C-D104768A1214", delegate: self)
+        simpleBluetoothIO = SimpleBluetoothIO(serviceUUID: "5ABF9F0B-338C-4C9F-871A-02074BB0D71D", delegate: self)
+        var myIntValue = Int8(slider.value)
+        print(myIntValue.description)
+        simpleBluetoothIO.writeValue(value: myIntValue)
+        brightnessValue.text = myIntValue.description
         
     }
 
