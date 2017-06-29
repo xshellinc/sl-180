@@ -6,6 +6,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var brightnessValue: UILabel!
     @IBOutlet weak var slider: UISlider!
+    var oldValue: Int8!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,14 +16,18 @@ class ViewController: UIViewController {
         print(myIntValue.description)
         simpleBluetoothIO.writeValue(value: myIntValue)
         brightnessValue.text = myIntValue.description
-        
+        oldValue = Int8(slider.value)
+        print(oldValue.description)
     }
 
     @IBAction func sliderChange(_ sender: UISlider) {
-        var myIntValue = Int8(slider.value)
-        print(myIntValue.description)
-        simpleBluetoothIO.writeValue(value: myIntValue)
-        brightnessValue.text = myIntValue.description
+        if(oldValue != Int8(slider.value)){
+            var myIntValue = Int8(slider.value)
+            print(myIntValue.description)
+            simpleBluetoothIO.writeValue(value: myIntValue)
+            brightnessValue.text = myIntValue.description
+            oldValue = Int8(slider.value)
+        }
     }
 
 }
