@@ -8,6 +8,7 @@
   },
   "author": "XSHELL INC.",
   "dependencies": {
+    "bleno": "^0.4.2",
     "i2c": "^0.2.3"
   }
 }
