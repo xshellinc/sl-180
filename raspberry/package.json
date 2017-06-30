@@ -1,0 +1,13 @@
+{
+  "name": "nodeble",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "XSHELL INC.",
+  "dependencies": {
+    "i2c": "^0.2.3"
+  }
+}
