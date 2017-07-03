@@ -1,0 +1,79 @@
+eeschema (2011-12-21 BZR 3253)-stable  >> Creation date: 2012/06/19 23:56:51
+
+#コンポーネント ( リファレンス順 )(サブコンポーネント使用)
+| C1         104         ;             
+| C2         104         ;             
+| C3         47μF       ;             
+| C4         22          ;             
+| C5         10μF       ;             
+| C6         22          ;             
+| C7         104         ;             
+| C8         104         ;             
+| C9         10μF       ;             
+| C10        104         ;             
+| C11        334         ;             
+| C12        104         ;             
+| D1         DIODE       ;             
+| D2         LED         ;             
+| D3         LED         ;             
+| IC1        ATMEGA328P-P; DIL28       
+| J1         DCJACK      ;             
+| P1         POWER SELECT;             
+| P2         FTDI_CONN   ;             
+| P3         ICSP        ;             
+| P4         CONN_8      ;             
+| P5         CONN_12     ;             
+| P6         CONN_4X2    ;             
+| P?         CONN_6      ;             
+| R1         10kΩ       ;             
+| R2         330Ω       ;             
+| R3         330Ω       ;             
+| SW1        RESET       ;             
+| TH1        THERMISTOR  ;             
+| U1         LM7805      ;             
+| U2         NJM2391DL1  ;             
+| U3         ARDUINOUNOBUS;             
+| U4         ARDUINOPROMINIBUS;             
+| U5         ARDUINOPROMINIBUS;             
+| X1         CRYSTAL_3PIN_SOCKET;             
+#コンポーネント終了
+
+#Cmp ( order = Value )(サブコンポーネント使用)
+| 104          C1        ;             
+| 104          C2        ;             
+| 104          C7        ;             
+| 104          C8        ;             
+| 104          C10       ;             
+| 104          C12       ;             
+| 10kΩ        R1        ;             
+| 10μF        C5        ;             
+| 10μF        C9        ;             
+| 22           C4        ;             
+| 22           C6        ;             
+| 330Ω        R2        ;             
+| 330Ω        R3        ;             
+| 334          C11       ;             
+| 47μF        C3        ;             
+| ARDUINOPROMINIBUS U4        ;             
+| ARDUINOPROMINIBUS U5        ;             
+| ARDUINOUNOBUS U3        ;             
+| ATMEGA328P-P IC1       ; DIL28       
+| CONN_12      P5        ;             
+| CONN_4X2     P6        ;             
+| CONN_6       P?        ;             
+| CONN_8       P4        ;             
+| CRYSTAL_3PIN_SOCKET X1        ;             
+| DCJACK       J1        ;             
+| DIODE        D1        ;             
+| FTDI_CONN    P2        ;             
+| ICSP         P3        ;             
+| LED          D2        ;             
+| LED          D3        ;             
+| LM7805       U1        ;             
+| NJM2391DL1   U2        ;             
+| POWER SELECT P1        ;             
+| RESET        SW1       ;             
+| THERMISTOR   TH1       ;             
+#コンポーネント終了
+
+#リスト終了
